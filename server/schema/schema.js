@@ -19,7 +19,7 @@ const Query = new GraphQLObjectType({
             resolve(parent, args) {
 
             }
-        },
+        },C
     }
 
 });
