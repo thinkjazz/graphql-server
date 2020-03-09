@@ -1,7 +1,11 @@
 const graphql = require('graphql');
 const { GraphQLObjectType, GraphQLString } = graphql;
 
-const movieType = new  GraphQLObjectType({
+const MovieType = new  GraphQLObjectType({
     name: 'Movie',
-    fields: ()=> ({})
+    fields: () => ({
+        id: { type: GraphQLString },
+        name: { type: GraphQLString },
+        genre: { type: GraphQLString },
+    }),
 })
